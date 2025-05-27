@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Ahmad Hamdeen | Digital Marketing Portfolio</title>
+  <meta name="description" content="Portfolio of Ahmad Hamdeen, Digital Marketing Guru & Freelancing Mentor based in Egypt.">
+  <style>
+    :root {
+      --main-color: #1640a6;
+      --accent-color: #FFD600;
+      --bg: #f5f8ff;
+      --text: #23273b;
+      --gray: #858eaa;
+      --white: #fff;
+      --card: #fff;
+      --shadow: 0 8px 32px rgba(22,64,166,0.09);
+      --divider: #e5eaf2;
+      --radius: 1.5rem;
+    }
+    body { font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; margin:0; background:var(--bg); color:var(--text);}
+    .ahmad-portfolio { max-width:960px; margin:0 auto; padding-bottom:64px;}
+    .ahmad-header { background:linear-gradient(90deg,var(--main-color),var(--accent-color) 90%); color:#fff; padding:44px 0 32px 0; text-align:center; border-radius:0 0 var(--radius) var(--radius); box-shadow:var(--shadow); margin-bottom:34px;}
+    .ahmad-header h1 { font-family:'Montserrat',Arial,sans-serif; font-size:2.4rem; margin:0 0 10px 0; font-weight:bold;}
+    .ahmad-header p { margin:0; font-size:1.15rem; color:#e2eafc;}
+    .ahmad-nav { display:flex; justify-content:center; gap:26px; margin:26px 0 0 0; font-family:'Montserrat',Arial,sans-serif; font-weight:600; flex-wrap:wrap;}
+    .ahmad-nav a { color:#fff; background:rgba(0,0,0,0.06); padding:8px 24px; border-radius:22px; text-decoration:none; font-size:1.1rem; letter-spacing:.3px; transition:background .2s, color .15s;}
+    .ahmad-nav a.active, .ahmad-nav a:hover { background:var(--accent-color); color:var(--main-color);}
+    .ahmad-section { background:var(--card); border-radius:var(--radius); margin-bottom:38px; padding:42px 30px 34px 30px; box-shadow:var(--shadow);}
+    .ahmad-section h2 { font-family:'Montserrat',Arial,sans-serif; color:var(--main-color); margin-top:0; font-size:1.85rem; letter-spacing:.7px; font-weight:700;}
+    .ahmad-divider { width:72px; height:6px; border-radius:4px; background:linear-gradient(90deg,var(--main-color) 40%,var(--accent-color)); margin:0 auto 32px auto; opacity:0.22;}
+    .ahmad-about-flex { display: flex; gap:38px; align-items: center; flex-wrap:wrap;}
+    .ahmad-profile-photo { width:160px; height:160px; object-fit:cover; border-radius:50%; border:6px solid var(--main-color); box-shadow:0 2px 22px #2a56b015; background:#ddd;}
+    .ahmad-about-text { flex:1; min-width:220px; }
+    .ahmad-about-gallery { margin-top:14px; display:flex; gap:13px; flex-wrap:wrap;}
+    .ahmad-about-gallery img { width:62px; height:62px; object-fit:cover; border-radius:12px; box-shadow:0 2px 10px #e0e5ed80; }
+    .ahmad-resume-list { list-style:none; padding:0; margin:0;}
+    .ahmad-resume-list li { margin-bottom:20px; padding-left:12px; border-left:4px solid var(--accent-color); background:#f9fafb; border-radius:8px; padding:17px 18px 14px 18px; box-shadow:0 2px 10px #e0e5ed11; display:flex; gap:17px; align-items:flex-start;}
+    .ahmad-resume-img { width:54px; height:54px; object-fit:cover; border-radius:10px; margin-right:10px; background:#e2e8f0;}
+    .ahmad-service-list { list-style:none; padding:0; margin:0;}
+    .ahmad-service-list li { margin-bottom:20px; display:flex; gap:16px; align-items:flex-start;}
+    .ahmad-service-icon { width:44px; height:44px; background:#fffdf6; border-radius:14px; border:2px solid var(--accent-color); box-shadow:0 2px 10px #f9a82512; display:flex;align-items:center;justify-content:center;}
+    .ahmad-project-list { list-style:none; padding:0; margin:0;}
+    .ahmad-project-list li { margin-bottom:22px; display:flex; gap:18px; align-items:flex-start;}
+    .ahmad-project-img { width:80px; height:80px; object-fit:cover; border-radius:14px; background:#eee;}
+    .ahmad-testimonials-list { list-style:none; padding:0; margin:0;}
+    .ahmad-testimonial-item { background: #f9f8ff; border-radius:16px; padding:22px 20px; margin-bottom:18px; box-shadow: 0 1px 9px #1d36810a;}
+    .ahmad-testimonial-name { color: var(--main-color); font-weight:600;}
+    .ahmad-blog-grid { display:grid; grid-template-columns:1fr 1fr; gap:24px; margin-top:18px;}
+    .ahmad-blog-card { background:#fff; border-radius:14px; box-shadow:0 2px 12px #2b399014; overflow:hidden; display:flex; flex-direction:column;}
+    .ahmad-blog-img { width:100%; height:140px; object-fit:cover; background:#f8f9fc;}
+    .ahmad-blog-content { padding:16px 16px 12px 16px; }
+    .ahmad-blog-title { font-weight:700; font-size:1.13rem; color:var(--main-color);}
+    .ahmad-blog-desc { font-size:0.99rem; color:#555; margin:11px 0;}
+    .ahmad-blog-meta { color:var(--accent-color); font-size:0.89rem;}
+    .ahmad-contact-form-wrap { max-width:420px; margin:0 auto; background:#f9fbff; padding:30px 20px; border-radius:18px;}
+    @media (max-width:700px){.ahmad-section{padding:22px 6px 16px 6px;}.ahmad-blog-grid{grid-template-columns:1fr;}.ahmad-about-flex{flex-direction:column; align-items:flex-start;}}
+    html {scroll-behavior:smooth;}
+  </style>
+</head>
+<body>
+<div class="ahmad-portfolio">
+  <div class="ahmad-header">
+    <h1>Ahmad Hamdeen</h1>
+    <p>Digital Marketing Guru &amp; Freelancing Mentor | Egypt<br>
+    Expert Digital Marketer &amp; Media Buyer | Career Coach | Strategist</p>
+    <div class="ahmad-nav">
+      <a href="#about" class="active">About</a>
+      <a href="#resume">Resume</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#blog">Blog</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+  <!-- About Section -->
+  <div id="about" class="ahmad-section">
+    <h2>About Me</h2>
+    <div class="ahmad-divider"></div>
+    <div class="ahmad-about-flex">
+      <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?fit=facearea&w=400&h=400&q=80" alt="Ahmad Hamdeen" class="ahmad-profile-photo">
+      <div class="ahmad-about-text">
+        <p>
+          Welcome! I'm Ahmad, a passionate digital marketing strategist and media buyer based in Egypt.<br>
+          My mission is to deliver top-notch digital marketing solutions globally. As a mentor and freelancing coach, I empower digital marketing students to launch successful freelancing careers. My approach blends practical experience with up-to-date market insights to ensure effective, result-driven strategies.<br>
+          Let's connect and take your business or career to the next level!
+        </p>
+        <div class="ahmad-about-gallery">
+          <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="Mentoring">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="Digital Marketing">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Social Media">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="Coaching">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Resume Section -->
+  <div id="resume" class="ahmad-section">
+    <h2>Resume</h2>
+    <div class="ahmad-divider"></div>
+    <ul class="ahmad-resume-list">
+      <li>
+        <img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=200&q=80" alt="" class="ahmad-resume-img">
+        <div>
+          <b>Digital Marketing Guru &amp; Strategist</b><br>
+          <span>Self-Employed, Egypt | 2018 - Present</span><br>
+          Managed successful marketing campaigns for local and international clients. Specialized in media buying, marketing strategy, and social media advertising.
+        </div>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=200&q=80" alt="" class="ahmad-resume-img">
+        <div>
+          <b>Freelancing Career Coach &amp; Mentor</b><br>
+          <span>Udacity, Leading 365 | 2021 - Present</span><br>
+          Coached over 500+ students in digital marketing and freelancing. Developed programs, workshops, and personal coaching sessions.
+        </div>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=200&q=80" alt="" class="ahmad-resume-img">
+        <div>
+          <b>Education</b><br>
+          <span>Bachelor's in Business Administration</span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- Services Section -->
+  <div id="services" class="ahmad-section">
+    <h2>Services</h2>
+    <div class="ahmad-divider"></div>
+    <ul class="ahmad-service-list">
+      <li>
+        <span class="ahmad-service-icon">🎯</span>
+        <div><b>Digital Marketing Strategy</b><br>Customized strategies for business growth.</div>
+      </li>
+      <li>
+        <span class="ahmad-service-icon">📊</span>
+        <div><b>Media Buying (Facebook/Meta/IG)</b><br>Advanced campaign setup and optimization.</div>
+      </li>
+      <li>
+        <span class="ahmad-service-icon">💬</span>
+        <div><b>Social Media Management</b><br>Content planning, engagement, and ads creative direction.</div>
+      </li>
+      <li>
+        <span class="ahmad-service-icon">🤝</span>
+        <div><b>Mentoring &amp; Coaching</b><br>Training and mentorship for freelancers and marketers.</div>
+      </li>
+      <li>
+        <span class="ahmad-service-icon">📝</span>
+        <div><b>Workshops &amp; Courses</b><br>Digital marketing, soft skills, and freelancing best practices.</div>
+      </li>
+    </ul>
+  </div>
+  <!-- Projects Section -->
+  <div id="projects" class="ahmad-section">
+    <h2>Projects</h2>
+    <div class="ahmad-divider"></div>
+    <ul class="ahmad-project-list">
+      <li>
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" alt="" class="ahmad-project-img">
+        <div>
+          <b>Medical &amp; Cosmetic Campaigns</b><br>
+          Campaigns for clinics, hospitals, and product launches in Egypt.
+        </div>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" alt="" class="ahmad-project-img">
+        <div>
+          <b>Freelancing Workshops</b><br>
+          Designed and delivered workshops for Digital Egypt Pioneers and Udacity.
+        </div>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="" class="ahmad-project-img">
+        <div>
+          <b>Content Creation</b><br>
+          Social media content and ad creatives for brands.
+        </div>
+      </li>
+      <li>
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" alt="" class="ahmad-project-img">
+        <div>
+          <b>Course Development</b><br>
+          Created digital marketing and freelancing courses, slides, and workbooks.
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- Blog Section -->
+  <div id="blog" class="ahmad-section">
+    <h2>Latest Blog Posts</h2>
+    <div class="ahmad-divider"></div>
+    <div class="ahmad-blog-grid">
+      <div class="ahmad-blog-card">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" class="ahmad-blog-img" alt="LinkedIn Hacks">
+        <div class="ahmad-blog-content">
+          <div class="ahmad-blog-title">6 Hacks to Use LinkedIn for Freelancing</div>
+          <div class="ahmad-blog-desc">Maximize your LinkedIn to attract freelance clients and build your personal brand with these actionable hacks.</div>
+          <div class="ahmad-blog-meta">May 2025</div>
+        </div>
+      </div>
+      <div class="ahmad-blog-card">
+        <img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80" class="ahmad-blog-img" alt="First Client">
+        <div class="ahmad-blog-content">
+          <div class="ahmad-blog-title">5 Ways to Get Your First Client Online</div>
+          <div class="ahmad-blog-desc">Tactics to help new freelancers land their first client with zero experience.</div>
+          <div class="ahmad-blog-meta">April 2025</div>
+        </div>
+      </div>
+      <div class="ahmad-blog-card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="ahmad-blog-img" alt="FB Ads">
+        <div class="ahmad-blog-content">
+          <div class="ahmad-blog-title">Top Mistakes in Facebook Ad Campaigns</div>
+          <div class="ahmad-blog-desc">Discover common reasons why Facebook ads fail and how to avoid them for better ROI.</div>
+          <div class="ahmad-blog-meta">April 2025</div>
+        </div>
+      </div>
+      <div class="ahmad-blog-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" class="ahmad-blog-img" alt="Portfolio">
+        <div class="ahmad-blog-content">
+          <div class="ahmad-blog-title">Secrets of a High-Converting Portfolio</div>
+          <div class="ahmad-blog-desc">How to build a portfolio that gets you noticed and hired as a freelancer.</div>
+          <div class="ahmad-blog-meta">March 2025</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Testimonials Section -->
+  <div id="testimonials" class="ahmad-section">
+    <h2>Testimonials</h2>
+    <div class="ahmad-divider"></div>
+    <ul class="ahmad-testimonials-list">
+      <li class="ahmad-testimonial-item">
+        <div>“Ahmad is not just a mentor, he’s a career changer. Highly recommended for any marketer or freelancer.”</div>
+        <div class="ahmad-testimonial-name">– Nourhan H., Freelance Marketer</div>
+      </li>
+      <li class="ahmad-testimonial-item">
+        <div>“Our clinic saw real growth with Ahmad’s marketing campaigns. Very insightful and creative!”</div>
+        <div class="ahmad-testimonial-name">– Dr. Mohamed T., Clinic Owner</div>
+      </li>
+      <li class="ahmad-testimonial-item">
+        <div>“Ahmad’s freelancing course helped me land my first real clients. Thank you!”</div>
+        <div class="ahmad-testimonial-name">– Ehab A., Digital Marketing Student</div>
+      </li>
+    </ul>
+  </div>
+  <!-- Contact Section -->
+  <div id="contact" class="ahmad-section">
+    <h2>Contact</h2>
+    <div class="ahmad-divider"></div>
+    <div style="margin-bottom:18px;">
+      <strong>Email:</strong> <a href="mailto:samora992002@gmail.com">samora992002@gmail.com</a><br>
+      <strong>Location:</strong> Kafr El-Sheikh, Egypt<br>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ahmad-hamdeen/" target="_blank">ahmad-hamdeen</a>
+    </div>
+    <div class="ahmad-contact-form-wrap">
+      <p>
+        <b>To contact me directly, email or connect via LinkedIn.</b>
+      </p>
+    </div>
+  </div>
+  <div style="background:#004080;color:#fff;text-align:center;padding:18px 0 8px 0;font-size:1rem;margin-top:80px;border-radius:0 0 18px 18px;">
+    &copy; 2025 Ahmad Hamdeen &middot; Digital Marketing & Freelancing Mentor
+  </div>
+</div>
+</body>
+</html>
